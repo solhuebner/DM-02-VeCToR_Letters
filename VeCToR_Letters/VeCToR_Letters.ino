@@ -1,6 +1,15 @@
-#include <SPI.h>
-#include "Arduboy.h"
-#include <EEPROM.h>
+/*
+ DEMO: VeCToR_letters
+
+ TEAM a.r.g.: http://www.team-arg.com/demos.html
+
+ 2015 - JO3RI
+
+ Demo License: MIT : https://opensource.org/licenses/MIT
+
+ */
+
+#include "Arglib.h"
 #include "bitmaps.h"
 
 Arduboy arduboy;
@@ -37,12 +46,12 @@ int test7 = 1;
 void setup() {
   arduboy.start();
   
-  arduboy.drawBitmap(20, 4, JO3RI, 88, 56, 1);
+  arduboy.drawBitmap(20, 4, JO3RI, 88, 56, WHITE);
   arduboy.display();
   delay(3000);
   
   arduboy.clearDisplay();
-  arduboy.drawBitmap(14, 16, TEAMarg, 96, 32, 1);
+  arduboy.drawBitmap(0, 8, TEAMarg, 128, 48, WHITE);
   arduboy.display();
   delay(3000);
   //Serial.begin(9600);
