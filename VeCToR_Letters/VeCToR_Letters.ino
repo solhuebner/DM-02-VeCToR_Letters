@@ -46,7 +46,9 @@ int test7 = 1;
 
 void setup() {
   arduboy.begin();
-
+  arduboy.clear();
+  arduboy.display();
+  
   arduboy.drawBitmap(20, 4, JO3RI, 88, 56, WHITE);
   arduboy.display();
   delay(3000);
