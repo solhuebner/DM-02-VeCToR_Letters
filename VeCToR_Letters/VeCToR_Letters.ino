@@ -9,10 +9,11 @@
 
 */
 
-#include "Arglib.h"
+#include <Arduino.h>
+#include <Arduboy2.h>
 #include "bitmaps.h"
 
-Arduboy arduboy;
+Arduboy2Base arduboy;
 
 int i = 500;
 int x = 63;
@@ -44,21 +45,21 @@ int test6 = 1;
 int test7 = 1;
 
 void setup() {
-  arduboy.start();
+  arduboy.begin();
 
   arduboy.drawBitmap(20, 4, JO3RI, 88, 56, WHITE);
   arduboy.display();
   delay(3000);
 
-  arduboy.clearDisplay();
-  arduboy.drawBitmap(0, 8, TEAMarg, 128, 48, WHITE);
+  arduboy.clear();
+  arduboy.drawBitmap(34, 4,  T_arg, 60, 56, WHITE);
   arduboy.display();
   delay(3000);
   //Serial.begin(9600);
 }
 
 void loop() {
-  arduboy.clearDisplay();
+  arduboy.clear();
   if (counter < 14) {
     switch (counter) {
       case 0:
