@@ -1,6 +1,5 @@
 # VeCToR Letters
-![Image]
-(http://www.team-arg.com/images/demos/VectorDemo.gif)
+![Image](http://www.team-arg.com/images/demos/VectorDemo.gif)
 
 An other demo showing vector scaled letters (includes the whole alphabet and numbers)
 
